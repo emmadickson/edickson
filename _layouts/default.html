@@ -73,11 +73,9 @@
       <div class="container" style="padding-top:150px; padding-bottom:150px;">
          <div class="section">
            <div class="row">
-              <div class="col s12 m1"></div>
-              <div class="col s12 m10">
+              <div class="col s12 m12">
                 <myname style=" font-size: 60px; font-family: 'Chicago'; color: black;" id="title"></myname>
               </div>
-              <div class="col s12 m1"></div>
          </div>
        </div>
       </div>
@@ -264,11 +262,11 @@
                <div class="row">
                  <div class="col s12 m6">
                     <h5 style="font-style:italic; border-bottom: 1px solid rgb(116,250,75) ">Tinkerer's Aquarium</h5>
-                    <a href=""><img src="assets/images/tinkerers_aquarium.jpg" style="width:100%" /></a>
+                    <a href="/pieces/tinkerers_aquarium.html"><img src="assets/images/tinkerers_aquarium.jpg" style="width:100%" /></a>
                  </div>
                  <div class="col s12 m6">
                     <h5 style="font-style:italic; border-bottom: 1px solid rgb(116,250,75) ">Mort</h5>
-                    <a href=""><img src="assets/images/mort.jpg" style="width:100%" /></a>
+                    <a href="/pieces/tinkerers_aquarium.html"><img src="assets/images/mort.jpg" style="width:100%" /></a>
                  </div>
               </div>
                </div>
@@ -406,12 +404,9 @@
               clearInterval(typing)
             }
             else{
-            console.log(spans)
-            console.log("Should be typing")
             div.textContent = div.textContent.slice(0, div.textContent.length-1)
             div.textContent = div.textContent + spans[i]
             div.textContent = div.textContent + "_"
-            console.log(div)
           }
         }
         var i = 0;
