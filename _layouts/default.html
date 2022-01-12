@@ -40,7 +40,9 @@
       <!-- End Jekyll SEO tag -->
       <style>
       button:focus {
-          background: rgb(116,250,253)
+          background: rgb(116,250,253);
+          border-radius: 0;
+
         }
 
       li{
@@ -72,17 +74,22 @@
         }
         #button-column {
           display: inline;
+          float:left;
         }
         .bigbutton {
             font-size: 10px;
             width: 100px;
             height: 50px;
             margin: 5px;
+            border-radius: 0;
+
         }
         .follow-buttons {
             width: 75px;
             height: 40px;
             margin: 1px;
+            border-radius: 0;
+
         }
         #sociallink{
           color:black!important;
@@ -119,23 +126,25 @@
         </div>
       </div>
 
+      <div class="row">
 
-        <div class="row">
-         <div class="button-panel col s12 m2" style="padding-top:100px">
-            <ul id="button-column" style="list-style: none;">
-                <li class="buttons"><button class="bigbutton" id="button1" data-link="option1"><a id="link" href="#info">Info</a></button></li>
-                <li class="buttons"><button class="bigbutton" id="button2" data-link="option2"><a id="link" href="#info">Data Engineering</a></button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option3"><a id="link" href="#info">Conservation</a></button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option4"><a id="link" href="#info">Net Art</a></button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option5"><a id="link" href="#info">Commissions</a></button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option6">New Media Art</button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option7">Visual Synth</button></li>
-                <li class="buttons"><button class="bigbutton" id="button3" data-link="option8">Residencies</button></li>
+        <div class="col s12 m12">
 
-            </ul>
-          </div>
-          <div class="col s12 m10" id="info-div" style="padding-top:100px">
-             <div class="row" id="info" style="background-color:white; overflow-y: scroll; overflow-x: hidden; height: 500px">
+          <div class="button-panel" style="padding-top:100px">
+             <ul id="button-column" style="list-style: none;">
+                 <li class="buttons"><button class="bigbutton" id="button1" data-link="option1"><a id="link" href="#info">Info</a></button></li>
+                 <li class="buttons"><button class="bigbutton" id="button2" data-link="option2"><a id="link" href="#info">Data Engineering</a></button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option3"><a id="link" href="#info">Conservation</a></button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option4"><a id="link" href="#info">Net Art</a></button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option5"><a id="link" href="#info">Commissions</a></button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option6">New Media Art</button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option7">Visual Synth</button></li>
+                 <li class="buttons"><button class="bigbutton" id="button3" data-link="option8">Residencies</button></li>
+
+             </ul>
+           </div>
+
+             <div id="info" style="background-color:white; overflow-y: scroll; overflow-x: hidden; height: 500px">
 
                <div class="row">
                   <div class="col s12 m12">
