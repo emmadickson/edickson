@@ -14,6 +14,7 @@
   <style>
    body{
     background-color: #2d3b4d;
+    font-family: url();
    }
    h4 {
     font-size: 25px;
@@ -230,25 +231,22 @@
   var lastTime = new Date()
 
   function loop() {
-      requestId = undefined;
       svg_canvas = document.getElementById('cover')
       old_height = svg_canvas.height.baseVal.value
       new_height = old_height - 10
       if (new_height <= 0){
-        stop()
+        stop(requestId)
       }
       else{
-        console.log(lastTime-time_marker) 
-        console.log(time_marker)
         if ((time_marker - lastTime) > 100){
-          console.log("adjust")
           svg_canvas.setAttributeNS(null, 'height', new_height);
           lastTime = new Date(); 
-
         }
         time_marker = new Date()
 
       
+        requestId = undefined;
+
       }
 
       start();
@@ -260,11 +258,10 @@ function start() {
     }
 }
 
-function stop() {
-    if (requestId) {
+function stop(requestId) {
        window.cancelAnimationFrame(requestId);
        requestId = undefined;
-    }
+
 }
 
 start()
